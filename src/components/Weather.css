@@ -1,0 +1,255 @@
+.weather {
+  place-self: center;
+  padding: 40px 30px;
+  border-radius: 30px;
+  background: rgba(104, 144, 245, 0.183);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-in-out;
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding-left: 20px;
+  font-size: 16px;
+  background: #e3ebfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+  color: #333;
+}
+
+.search-bar img {
+  width: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.search-bar img:hover {
+  transform: scale(1.05);
+}
+
+/* Weather Icon */
+.weather-icon {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+/* Temperature */
+.temperature {
+  color: #2f3b5b;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Location */
+.location {
+  color: #2f3b5b;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: -1.6rem;
+}
+
+/* Weather Data Box */
+.weather-data {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.weather-data .col {
+ background: rgba(104, 144, 245, 0.092);
+  border-radius: 20px;
+  padding: 20px;
+  width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #2f3b5b;
+  transition: transform 0.2s;
+}
+
+.weather-data .col:hover {
+  transform: translateY(-5px);
+}
+
+.weather-data .col img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.weather-data .col p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.weather-data .col span {
+  font-size: 14px;
+  color: #2f3b5b;
+  font-weight: 500;
+}
+
+/* ============= RESPONSIVE STYLES ============= */
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .temperature {
+    font-size: 60px;
+  }
+
+  .location {
+    font-size: 22px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+    height: 45px;
+  }
+
+  .search-bar img {
+    width: 35px;
+    padding: 6px;
+  }
+
+  .weather-data .col {
+    width: 140px;
+    padding: 16px;
+  }
+
+  .weather-data {
+    gap: 15px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .weather {
+    padding: 30px 20px;
+  }
+
+  .temperature {
+    font-size: 70px;
+  }
+
+  .location {
+    font-size: 24px;
+  }
+
+  .weather-data {
+    justify-content: center;
+  }
+}
+
+
+
+
+/*
+.weather{
+    place-self: center;      
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500aef);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+}
+
+.search-bar img{
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer
+}
+
+.weather-icon{
+    width: 150px;
+    margin: 30px 0;
+}
+
+.temperature{
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.location{
+    color: #fff;
+    font-size: 40px;
+}
+
+.weather-data{
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-data .col{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather-data .col span{
+    display: block;
+    font-size: 16px;
+}
+
+.weather-data .col img{
+    width: 26px;
+    margin-top: 10px
+} 
+
+*/
